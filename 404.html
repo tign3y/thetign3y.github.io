@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            vertical-align: middle;
+            margin: 2em auto;
+            background-color: #C3214F;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            margin-left: 5px;
+            text-align: left;
+            font-family: monospace;
+            font-size: 28px;
+            color: white;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+        .gray-box {
+  background-color: #c4c9c9;
+  height: 60%;
+  width: 45%;
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.mac-window {
+  width: 60%;
+  border-top: 2px solid white;
+  border-radius: 10px;
+  height: 30em;
+  margin: 20% 10% 10% 25%;
+  background-color: white;
+  position: absolute;
+  -webkit-box-shadow: -5px 10px 40px 10px rgba(0,0,0,0.30);
+-moz-box-shadow: -5px 10px 40px 10px rgba(0,0,0,0.30);
+box-shadow: -5px 10px 40px 10px rgba(0,0,0,0.30);
+}
+
+.text-window {
+    margin-top: 2em;
+    border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+    height: 28em;
+    background-color: black;
+  }
+
+li {
+  display: inline;
+}
+
+.window-control {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  margin: 2px;
+  float: left;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: #df6961;
+  margin-left: 10px;
+}
+
+.yellow {
+  background-color: #f2bc57;
+}
+
+.green {
+  background-color: #6bb358;
+}
+
+.blinking-cursor { 
+  font-weight: 100;
+  font-size: 30px;
+  color: #FFFFFF;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+  margin-left: 10px;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="gray-box"></div>
+    <div class="mac-window">
+        <div class="window-control red"></div>
+        <div class="window-control yellow"></div>
+        <div class="window-control green"></div>
+        <div class="text-window">
+            <p>Error 404.</p>
+            <p>Page Not Found.<p><br>
+            <p>Sorry, but the page you were trying to view does not exist.<span class="blinking-cursor">_</span></p>
+        </div>
+    </div>
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
