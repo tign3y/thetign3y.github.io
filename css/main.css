@@ -11,11 +11,10 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #E8FFE9;
     font-size: 1em;
     line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -93,23 +92,7 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   ========================================================================== *
 
 /* ==========================================================================
    Helper classes
@@ -281,85 +264,67 @@ textarea {
     }
 }
 
+:root {
+    --main-bg-white: #FFFBE8;
+    --rose: #E1A6AD;
+    --plum-black: #0D0000;
+    --drk-blue: #080D24;
+    --drk-red: #940C00;
+}
+
 body {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 200;
+    font-size: 100%;
+    max-width: 100%;
+    overflow-x: hidden; 
+    /*hide scroll bars & prevent horizontal scrolling*/
+    background-color: var(--main-bg-white);
+    padding-bottom: 40px;
 }
 
 h1 {
-    font-size: 100px;
-    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
     margin-left: 10%;
-    color: #1F1F1F;
-}
-
-.yellow-bar {
-  position: absolute;
-  background-color: #FFD400;
-  width: 20%;
-  height: 100%;
-  margin-left: 10%;
-}
-
-.gray-bar {
-  position: fixed;
-  background-color: #878787;
-  margin-right: 10%;
-  margin-left: 70%;
-  width: 20%;
-  height: 100%;
-
-
-}
-
-.blue-box {
-    background-color: #223377;
-}
-
-.red-box {
-    background-color: #C3214F;
-    margin-top: 250px;
+    color: var(--plum-black);
 }
 
 p {
-    color: white;
-    font-size: 36px;
+    font-size: 1.5em;
     font-weight: 500;
     padding: 3%;
 }
 
 a {
-    color: #FFD400;
+    color: #FFD400; /*gold*/
     font-weight: 600;
     text-decoration: none;
     }
 
 a:hover {
     text-decoration: none;
-    color: #878787;
+    color: var(--rose);
     transition: 0.5s;
     transition-timing-function: ease-in;
-
 }
 
-.first {
-    font-weight: 600;
-    font-size: 40px;
-}
-
-.ftr {
-    color: #1F1F1F;
-    font-weight: 600;
-    padding: 5px;
+.footer {
     text-align: right;
-    margin-right: 5%;
-    background-color: white;
-    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    display: block;
+}
+
+i {
+    color: var(--rose);
+    margin-right: 20px;
 }
 
 .blinking-cursor { 
-  font-weight: 800;
-  font-size: 100px;
-  color: #FFFFFF;
+  font-weight: 700;
+  color: var(--main-bg-white);
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
