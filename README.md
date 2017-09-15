@@ -1,8 +1,2 @@
-<<<<<<< HEAD
-# adiatigney.github.io
-=======
-# thetign3y.github.io
->>>>>>> refs/remotes/origin/master
+Tigney.co 
 Personal page, links to social media &amp; work
-
-Simple, single page.
