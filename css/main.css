@@ -292,7 +292,6 @@ textarea {
     }
 }
 
-<<<<<<< HEAD
 :root {
     --main-bg-white: #FFFBE8;
     --rose: #E1A6AD;
@@ -322,70 +321,6 @@ h1 {
 
 p {
     font-size: 1.5em;
-=======
-body {
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-h1 {
-    font-size: 100px;
-    font-weight: 800;
-    margin-left: 10%;
-    color: #1F1F1F;
-}
-
-.yellow-bar {
-  position: absolute;
-  background-color: #FFD400;
-  width: 20%;
-  height: 100%;
-  margin-left: 10%;
-}
-
-.gray-bar {
-  position: fixed;
-  background-color: #878787;
-  margin-right: 10%;
-  margin-left: 70%;
-  width: 20%;
-  height: 100%;
-
-
-}
-
-.blue-box {
-    background-color: #223377;
-}
-
-.red-box {
-    background-color: #C3214F;
-    margin-top: 250px;
-}
-
-p {
-    color: white;
-    font-size: 36px;
->>>>>>> refs/remotes/origin/master
-    font-weight: 500;
-    padding: 3%;
-}
-
-a {
-<<<<<<< HEAD
-    color: #FFD400; /*gold*/
-=======
-    color: #FFD400;
->>>>>>> refs/remotes/origin/master
-    font-weight: 600;
-    text-decoration: none;
-    }
-
-a:hover {
-    text-decoration: none;
-<<<<<<< HEAD
-    color: var(--rose);
-    transition: 0.5s;
-    transition-timing-function: ease-in;
 }
 
 .footer {
@@ -395,47 +330,21 @@ a:hover {
     display: block;
 }
 
-i {
+i, a, a:visited {
     color: var(--rose);
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .blinking-cursor { 
-  font-weight: 700;
-  color: var(--main-bg-white);
-=======
-    color: #878787;
-    transition: 0.5s;
-    transition-timing-function: ease-in;
-
-}
-
-.first {
-    font-weight: 600;
-    font-size: 40px;
-}
-
-.ftr {
-    color: #1F1F1F;
-    font-weight: 600;
-    padding: 5px;
-    text-align: right;
-    margin-right: 5%;
-    background-color: white;
-    margin-bottom: 0px;
-}
-
-.blinking-cursor { 
-  font-weight: 800;
-  font-size: 100px;
-  color: #FFFFFF;
->>>>>>> refs/remotes/origin/master
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-  margin-left: 10px;
+    font-weight: 700;
+    color: var(--main-bg-white);
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+    margin-left: 10px;
 }
 
 @keyframes "blink" {
